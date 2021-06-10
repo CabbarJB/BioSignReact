@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/views/app-views/UserDetails/UserDetails.module.css"],"names":[],"mappings":"AAAA,8BACI,gBAAiB,CACjB,qBAAsB,CACtB,cACJ","file":"10.38da1e16.chunk.css","sourcesContent":[".userField{\r\n    line-height: 28px;\r\n    vertical-align: middle;\r\n    font-size: 16px;\r\n}"]}
