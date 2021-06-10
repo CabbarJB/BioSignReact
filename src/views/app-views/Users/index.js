@@ -1,16 +1,20 @@
 import React, {Component} from 'react';
-import * as css from './users.module.css'
-import {Card, Table, Select, Input, Button, Badge, Menu, Modal, Form, message, Upload, Pagination, Spin} from 'antd';
+// import * as css from './users.module.css'
+// import {Card, Table, Select, Input, Button, Badge, Menu, Modal, Form, message, Upload, Pagination, Spin} from 'antd';
+import {Card, Table, Badge, Pagination, Spin} from 'antd';
 import Flex from 'components/shared-components/Flex'
 import AvatarStatus from 'components/shared-components/AvatarStatus';
 import EllipsisDropdown from 'components/shared-components/EllipsisDropdown';
+// import {
+//     DeleteOutlined,
+//     SearchOutlined,
+//     PlusCircleOutlined,
+//     EditOutlined,
+//     LoadingOutlined,
+//     PlusOutlined,
+// } from '@ant-design/icons';
 import {
-    DeleteOutlined,
-    SearchOutlined,
-    PlusCircleOutlined,
-    EditOutlined,
     LoadingOutlined,
-    PlusOutlined,
 } from '@ant-design/icons';
 
 class Users extends Component {
@@ -91,9 +95,7 @@ class Users extends Component {
                             <Table pagination={false} columns={this.tableColumns} dataSource={this.tempData} rowKey='id'/>
                             <div style={{padding: '20px 0', display: 'flex', justifyContent: 'center'}}>
                                 <Pagination showSizeChanger={false}
-                                            current={1}
                                             pageSize={5}
-                                            defaultCurrent={1}
                                             total={20}/>
                             </div>
                         </div>

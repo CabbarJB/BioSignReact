@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Menu, Grid } from "antd";
-import IntlMessage from "../util-components/IntlMessage";
+// import IntlMessage from "../util-components/IntlMessage";
 import Icon from "../util-components/Icon";
 import navigationConfig from "configs/NavigationConfig";
 import { connect } from "react-redux";
@@ -12,8 +12,8 @@ import { onMobileNavToggle } from "redux/actions/Theme";
 const { SubMenu } = Menu;
 const { useBreakpoint } = Grid;
 
-const setLocale = (isLocaleOn, localeKey) =>
-  isLocaleOn ? <IntlMessage id={localeKey} /> : localeKey.toString();
+// const setLocale = (isLocaleOn, localeKey) =>
+//   isLocaleOn ? <IntlMessage id={localeKey} /> : localeKey.toString();
 
 const setDefaultOpen = (key) => {
   let keyList = [];
@@ -30,7 +30,7 @@ const setDefaultOpen = (key) => {
 };
 
 const SideNavContent = (props) => {
-	const { sideNavTheme, routeInfo, hideGroupTitle, localization, onMobileNavToggle } = props;
+	const { sideNavTheme, routeInfo, hideGroupTitle, onMobileNavToggle } = props;
 	const isMobile = !utils.getBreakPoint(useBreakpoint()).includes('lg')
 	const closeMobileNav = () => {
 		if (isMobile) {
@@ -97,7 +97,7 @@ const SideNavContent = (props) => {
 };
 
 const TopNavContent = (props) => {
-  const { topNavColor, localization } = props;
+  const { topNavColor } = props;
   return (
     <Menu mode="horizontal" style={{ backgroundColor: topNavColor }}>
       {navigationConfig.map((menu) =>

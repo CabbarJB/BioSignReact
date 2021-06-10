@@ -1,17 +1,17 @@
 import React from 'react'
-import LoginForm from '../../components/LoginForm'
+// import LoginForm from '../../components/LoginForm'
 import { Card, Row, Col } from "antd";
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import ESignLogin from "../../components/ESignLogin";
-
-const backgroundStyle = {
-	backgroundImage: '',
-	backgroundRepeat: 'no-repeat',
-	backgroundSize: 'cover'
-}
+//
+// const backgroundStyle = {
+// 	backgroundImage: '',
+// 	backgroundRepeat: 'no-repeat',
+// 	backgroundSize: 'cover'
+// }
 
 const LoginOne = props => {
-	const theme = useSelector(state => state.theme.currentTheme)
+	// const theme = useSelector(state => state.theme.currentTheme)
 	return (
 		<div className="h-100">
 			<div className="container d-flex flex-column justify-content-center h-100">

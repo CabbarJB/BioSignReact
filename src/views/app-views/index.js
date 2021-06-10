@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Loading from 'components/shared-components/Loading';
 import { APP_PREFIX_PATH } from 'configs/AppConfig'
-import Users from "./Users";
+// import Users from "./Users";
 export const AppViews = () => {
   return (
     <Suspense fallback={<Loading cover="content"/>}>

@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 
-import {Card, Table, Select, Input, Button, Badge, Menu, Modal, Form, message, Upload, Spin, Row, Col, Image, Checkbox} from 'antd';
-import Flex from 'components/shared-components/Flex'
-import AvatarStatus from 'components/shared-components/AvatarStatus';
-import EllipsisDropdown from 'components/shared-components/EllipsisDropdown';
+import {Card, Select,Form, Row, Col, Image, Checkbox} from 'antd';
+// import {Card, Table, Select, Input, Button, Badge, Menu, Modal, Form, message, Upload, Spin, Row, Col, Image, Checkbox} from 'antd';
+// import Flex from 'components/shared-components/Flex'
+// import AvatarStatus from 'components/shared-components/AvatarStatus';
+// import EllipsisDropdown from 'components/shared-components/EllipsisDropdown';
 import * as css from './UserDetails.module.css'
 const {Option} = Select
 class UserDetails extends Component {
